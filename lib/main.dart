@@ -13,11 +13,13 @@ void main() {
       ),
       // this is the widgt which help use to build screen the use all the widgts
       home: Scaffold(
+        backgroundColor: Colors.amber,
         appBar: AppBar(title: Text("My First Flutter App",),
         ),
         floatingActionButton : FloatingActionButton(onPressed: null,
-        child: Text("clicked"),),
-        body: Center(child: Text("My first flutter programmer :)")),
+        child: Text("clicked",style: TextStyle(color: Colors.black87),),),
+        body: Center(child: Text("My first flutter programmer :)",
+        style: TextStyle(fontSize: 20,color: Colors.blue[300]),)),
       ),
     )
   );
